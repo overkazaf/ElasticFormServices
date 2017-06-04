@@ -1,0 +1,28 @@
+{
+  "plugins": [
+    [
+      "module-resolver", {
+        "root": ["."],
+        "alias": {
+          "styles": "./styles"
+        },
+        "cwd": "babelrc"
+    }],
+    [
+      "wrap-in-js",
+      {
+        "extensions": ["css$", "scss$"]
+      }
+    ],
+    [
+      "import",
+      {
+        "libraryName": "antd"
+      }
+    ]
+  ],
+  "presets": [
+      "next/babel"
+  ],
+  "ignore": []
+}

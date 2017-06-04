@@ -1,0 +1,43 @@
+.sider-right {
+  positon: absolute;
+  left: 0;
+  top: 20px;
+  width: 280px;
+  height: 95vh;
+  background: #fff;
+  box-shadow: 1px 1px 3px #000;
+  background: #eee;
+  border-radius: 0 0 5px 5px; }
+  .sider-right .sider-tool-handler {
+    position: relative;
+    background: #999;
+    width: 100%;
+    height: 40px;
+    line-height: 32px;
+    padding: 4px;
+    color: #fff;
+    cursor: move;
+    transition: all .3s ease-in-out; }
+    .sider-right .sider-tool-handler:hover {
+      background: #222; }
+    .sider-right .sider-tool-handler .sider-tool-ctrl {
+      position: absolute;
+      right: 4px;
+      top: 4px;
+      width: 120px;
+      text-align: right;
+      font-size: 16px; }
+      .sider-right .sider-tool-handler .sider-tool-ctrl span {
+        cursor: pointer;
+        font-size: 14px;
+        color: #fff;
+        margin-top: 2px;
+        margin-right: 6px; }
+        .sider-right .sider-tool-handler .sider-tool-ctrl span:hover {
+          font-weight: bold; }
+  .sider-right .sider-tool-content {
+    padding: 10px; }
+    .sider-right .sider-tool-content .ant-input-search {
+      width: 240px; }
+
+/*# sourceMappingURL=index.css.map */
