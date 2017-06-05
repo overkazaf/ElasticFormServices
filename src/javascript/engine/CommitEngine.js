@@ -32,11 +32,17 @@ class CommitEngine {
 
 	static doSubmit(dataModel) {
 
-		let submitUrl = `http://localhost:3000/form/submit/${dataModel.formId}`;
+		let submitUrl = `http://localhost:3000/form/submit`;
+
+		console.log('dataModel', dataModel);
 		
 		fetch(submitUrl, {
 			method: 'POST',
-			data: JSON.stringify(dataModel)
+			headers: { 
+				'Accept': 'application/json',
+				'Content-Type': 'application/json' 
+			},
+			body: JSON.stringify({data: dataModel})
 		})
 			.then(function(response) {
 		        if (response.status >= 400) {
